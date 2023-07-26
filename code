@@ -1,0 +1,14 @@
+l = ["ram",1,"shyam",2,"aman",3]
+print("The original list : " + str(l))
+res = []
+x=[]
+for i in l:
+    if type(i) == str:
+        res.append(i)
+    else:
+        x.append(i)
+res.sort()
+x.sort()
+res.extend(x)
+
+print("List  sorting : " + str(res))
